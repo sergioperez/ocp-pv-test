@@ -6,7 +6,7 @@ const adapter = new FileSync('/mnt/demo_volumes/db.json')
 const db = low(adapter)
 
 const app = express()
-const port = 3000
+const port = 8080
 
 const DEFAULT_KEY="count"
 

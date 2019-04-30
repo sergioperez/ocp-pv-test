@@ -12,7 +12,7 @@ const DEFAULT_KEY="count"
 
 // Initialize the database number to 0
 
-db.defaults({DEFAULT_KEY: 8}).write()
+db.defaults({[DEFAULT_KEY]: 0}).write()
 
 app.get('/', (req, res) => {
   const num = db.get(DEFAULT_KEY).value()
